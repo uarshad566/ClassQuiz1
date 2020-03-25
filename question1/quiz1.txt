@@ -1,0 +1,37 @@
+package main
+import "fmt"
+
+func main() {
+	var num int
+	str2 := "Exit"
+	str1 := "Please select an option:
+				1 – Print Covid19 cases in Pakistan 
+				2 – Print Covid19 cases in SouthKorea
+				3 – Print Covid19 cases in France
+				4 – Print my personalized message to Coronavirus
+				0 – Exit
+			"
+	fmt.Println(str1)
+	fmt.Scanf("%d", &num)
+	
+	switch num {
+	case 1:
+		fmt.Println("Covid19 cases in Pakistan are: ")
+		fmt.Println("1000")
+		
+	case 2:
+		fmt.Println("Covid19 cases in SouthKorea are: ")
+		fmt.Println("9137")
+
+	case 3:
+		fmt.Println("Covid19 cases in France are: ")
+		fmt.Println("22,304")
+	
+	case 4:
+		fmt.Println("Covid19 is a big problem for us and we need to battle it as a team and stay at home to stay safe")
+	
+	default:
+		fmt.Printf(str2)
+	}
+
+}
